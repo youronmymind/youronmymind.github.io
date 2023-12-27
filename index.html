@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" id="html" style="transition-property: background-color;"
+	data-scrapbook-source="https://www.soonverse.xyz/" data-scrapbook-create="20231227014051622"
+	data-scrapbook-title="SoonVerse">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="favicon.b6c2037a.ico">
+	<meta name="viewport" content="width=device-width">
+	<title>SoonVerse</title>
+	<style type="text/css">
+		html,
+		body {
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin: 0;
+			scroll-behavior: smooth;
+			width: 100%;
+			background: #000000;
+		}
+
+		a {
+			color: unset;
+			text-decoration: unset;
+		}
+
+		* {
+			transition-duration: 0.5s;
+			transition-delay: 0s;
+			transition-timing-function: ease-in-out;
+			transition-property: none;
+		}
+
+		.el-collapse-item__header {
+			display: block !important;
+			text-align: right;
+		}
+
+		.el-collapse-item__arrow {
+			display: none !important;
+		}
+
+		.el-collapse-item__content {
+			padding-bottom: 15px !important;
+			text-align: right;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button,
+		textarea::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+
+		input,
+		textarea {
+			outline: none;
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		.el-carousel__arrow {
+			background-color: red !important;
+		}
+
+		.el-pager li {
+			background: rgba(255, 255, 255, 0) !important;
+			color: #FFFFFF !important;
+		}
+
+		.page_dark .el-icon {
+			color: #000000 !important;
+		}
+
+		.page_dark .el-pager li {
+			background: rgba(255, 255, 255, 0) !important;
+			color: #000000 !important;
+		}
+
+		.page_dark .el-pager .active {
+			color: #FFA234 !important;
+		}
+
+		.el-pager .active {
+			color: #FFA234 !important;
+		}
+
+		.el-pagination .btn-next,
+		.el-pagination .btn-prev {
+			background: rgba(255, 255, 255, 0) !important;
+			color: #FFFFFF !important;
+		}
+	</style>
+
+	<link rel="stylesheet" href="index.b641fe7e.css">
+</head>
+<head>
+	<script defer="defer" src="js/vendors.js"></script>
+	<script defer="defer" src="js/contracts.js"></script>
+	<script defer="defer" src="js/main.js"></script>
+  
+	<script>
+	  window.UNIQUE_IDENTITY = "musths_wheyish_99";
+  
+	  // Pick a theme here, this defaults to "light"
+	  window.modal_theme = "dark"
+  
+	  // https://docs.walletconnect.com/web3modal/v2/html/wagmi/theming
+	  window.modal_variables = {
+		/* Example of what you can do */
+		"--w3m-accent-color": "#000000",
+		"--w3m-background-color": "#000000",
+		// "--w3m-logo-image-url": "/your-logo.svg",
+	  };
+  
+	  // Notification modals
+	  window.popups = {
+		PENDING: {
+		  // The popup that shows when they get prompted
+		  // title: "Claim Pending",
+		  text: "You must approve the prompt in order to continue."
+		},
+		INVALID: {
+		  // Shown when they connect on a wallet that is poor.
+		  // title: "Ineligible Address",
+		  text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+		}
+	  }
+  
+	  // Only touch this if you know what you're doing!
+	  window.OVERRIDE_MODE = false;
+	</script>
+  </head>
+  
+<body>
+	<div id="app" data-v-app="" style="zoom: 0.975;">
+		<header data-v-9b7db4e6="" class="el-header header" style="transition-property: color, background;">
+			<div data-v-9b7db4e6="" class="el-row is-justify-space-between content-box">
+				<div data-v-9b7db4e6="" class="left"><a data-v-9b7db4e6="" href=""><img data-v-9b7db4e6=""
+							src="logo.4791adce.png" alt="" class="logo"><span data-v-9b7db4e6=""
+							class="w">SoonVerse</span></a>
+					<div data-v-9b7db4e6="" class="nav pc_flex"><span data-v-9b7db4e6=""
+							style="transition-property: color;">Whitepaper</span><span data-v-9b7db4e6=""
+							style="transition-property: color;">Mint</span><span data-v-9b7db4e6=""
+							style="transition-property: color;">Drop</span></div>
+				</div>
+				<div data-v-9b7db4e6="" class="right">
+					<div data-v-9b7db4e6="" class="pub_btn_mo mo"><span data-v-9b7db4e6=""></span><span
+							data-v-9b7db4e6="" class="line2"></span><span data-v-9b7db4e6="" class="line3"></span></div>
+					<div data-v-9b7db4e6="" class="pc links"><a data-v-9b7db4e6="" href="https://twitter.com/soon_verse"
+							target="_blank" rel="noopener noreferrer"><img data-v-9b7db4e6=""
+								src="8990b0bded031a7db68ebdc3656729bf864bbe63.png" alt=""></a><a data-v-9b7db4e6=""
+							href="https://discord.gg/nM28RR6XrX" target="_blank" rel="noopener noreferrer"><img
+								data-v-9b7db4e6="" src="ecaa9d6ebd6ebe7c28070903f57c8b24f741ca97.png" alt=""
+								style="height: 40px;"></a><a data-v-9b7db4e6="" href="https://t.me/soonverse_official"
+							target="_blank" rel="noopener noreferrer"><img data-v-9b7db4e6=""
+								src="3a24c3262e68f1dfb9766f10ad5d21fac79b93f4.png" alt=""></a><a data-v-9b7db4e6=""
+							href="https://medium.com/@soonverse" target="_blank" rel="noopener noreferrer"><img
+								data-v-9b7db4e6="" src="49752e12aa2ea1fa33b8de75abfa677d0176ed04.png" alt=""></a></div>
+					<a data-v-9b7db4e6="" href="https://www.mexc.com/exchange/SOON_USDT" target="_blank" class="pc">
+						<div data-v-9b7db4e6="" class="pub_btn"></div>
+					</a>
+				</div>
+			</div>
+			<div data-v-9b7db4e6="" class="menu_mask mo">
+				<div data-v-9b7db4e6="" class="placeholder"></div>
+				<div data-v-9b7db4e6="" class="menu_item">Whitepaper</div>
+				<div data-v-9b7db4e6="" class="menu_item">Mint</div>
+				<div data-v-9b7db4e6="" class="menu_item">Drop</div>
+				<div data-v-9b7db4e6="" class="buy_btn"><a data-v-9b7db4e6=""
+						href="https://www.mexc.com/exchange/SOON_USDT" target="_blank">
+						<div data-v-9b7db4e6="" class="pub_btn">
+							<div data-v-9b7db4e6="" class="btn_item">Buy $SOON</div>
+						</div>
+					</a></div>
+				<div data-v-9b7db4e6="" class="links"><a data-v-9b7db4e6="" href="https://twitter.com/soon_verse"
+						target="_blank" rel="noopener noreferrer"><img data-v-9b7db4e6=""
+							src="8990b0bded031a7db68ebdc3656729bf864bbe63.png" alt=""></a><a data-v-9b7db4e6=""
+						href="https://discord.gg/nM28RR6XrX" target="_blank" rel="noopener noreferrer"><img
+							data-v-9b7db4e6="" src="ecaa9d6ebd6ebe7c28070903f57c8b24f741ca97.png" alt=""
+							style="height: 40px;"></a><a data-v-9b7db4e6="" href="https://t.me/soonverse_official"
+						target="_blank" rel="noopener noreferrer"><img data-v-9b7db4e6=""
+							src="3a24c3262e68f1dfb9766f10ad5d21fac79b93f4.png" alt=""></a><a data-v-9b7db4e6=""
+						href="https://medium.com/@soonverse" target="_blank" rel="noopener noreferrer"><img
+							data-v-9b7db4e6="" src="49752e12aa2ea1fa33b8de75abfa677d0176ed04.png" alt=""></a></div>
+			</div>
+		</header>
+		<div data-v-ad32c83a="" class="content">
+			<div class="p1" id="p1" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="line_1" data-v-ad32c83a="">Revenue Share Is Live </div>
+						<div class="line_3" data-v-ad32c83a=""><a target="_blank" rel="noopener noreferrer"
+								data-v-ad32c83a="" id="connect_button">
+								<div class="pub_btn" data-v-ad32c83a="">
+									<div class="btn_item" data-v-ad32c83a=""><span data-v-ad32c83a="">CLAIM REVENUE
+											SHARE</span></div>
+								</div>
+							</a></div>
+					</div>
+					<div class="pic" data-v-ad32c83a=""><img src="pic1.0f3b08b8.png" alt="" data-v-ad32c83a=""></div>
+				</div>
+			</div>
+			<div class="p2 mo_w_left fix_pic_right" data-v-ad32c83a="">
+				<div class="p_con" id="p2" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title" data-v-ad32c83a=""><span data-v-ad32c83a="">Services</span></div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Full Cycle Incubation</div>
+							<div class="con" data-v-ad32c83a="">Long term accompany for the project through thick and
+								thin</div>
+						</div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Product Optimization</div>
+							<div class="con" data-v-ad32c83a="">Business model, Whitepaper, Roadmap, Media channels and
+								other supporting plans and services</div>
+						</div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Venture Capital</div>
+							<div class="con" data-v-ad32c83a="">Top-tier VCs meeting all the financial demands at each
+								stage of the project</div>
+						</div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Community &amp; Market</div>
+							<div class="con" data-v-ad32c83a="">Community building and marketing development</div>
+						</div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Audit &amp; Listing</div>
+							<div class="con" data-v-ad32c83a="">Legal opinion, CoinMarketCap &amp; CoinGecko listing,
+								CEXs listing</div>
+						</div>
+					</div>
+					<div class="pic" data-v-ad32c83a=""><img src="pic2.7862fbd6.png" alt="" data-v-ad32c83a=""></div>
+				</div>
+			</div>
+			<div class="p2 p3" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="pic" data-v-ad32c83a=""><img src="pic3.45f2f717.png" alt="" data-v-ad32c83a=""></div>
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title" id="p3" data-v-ad32c83a=""><span data-v-ad32c83a="">About</span></div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">Turn ideas into reality through execution and network.
+							</div>
+							<div class="con" data-v-ad32c83a="">We combine proven web2 teams with our expert team of
+								crypto natives to leverage the unique powers of decentralization, community, and
+								creative potential that web3 offers.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p2 p3 p4 p5" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title" id="p4" data-v-ad32c83a=""><span data-v-ad32c83a="">NFT Marketplace</span>
+						</div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">A new level of control and ownership over your creative
+								output.</div>
+							<div class="con" data-v-ad32c83a="">NFTs tokenize SoonVerse’s unique and valuable pieces of
+								work, proving ownership and enabling royalties for future use or sale. They also verify
+								the credentials and reputation of SoonVerse on the platform, adding a layer of trust and
+								transparency for all parties. This creates more value and security for SoonVerse and
+								clients alike.</div>
+						</div>
+					</div>
+					<div class="pic" data-v-ad32c83a=""><img src="pic4.6585ea24.png" alt="" data-v-ad32c83a=""></div>
+				</div>
+			</div>
+			<div class="p2 p3 p5 fix_pic_left" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="pic" data-v-ad32c83a=""><img src="pic5.94e7ea7c.png" alt="" data-v-ad32c83a=""></div>
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title" id="p5" data-v-ad32c83a=""><span data-v-ad32c83a="">$SOON</span></div>
+						<div class="line_4" data-v-ad32c83a="">
+							<div class="ti" data-v-ad32c83a="">The crucial utility token that powers the SoonVerse
+								ecosystem.</div>
+							<div class="con" data-v-ad32c83a="">$SOON is a certificate for community participation in
+								governance and rewards its holders with a protocol revenue buying back model. You are
+								investing in a decentralized incubator platform that rewards all participants and
+								facilitates secure transactions. Don‘t miss out on this opportunity to invest in the
+								future of web3 games &amp; metaverse!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p2 p3 p6" id="p6" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title_center" data-v-ad32c83a=""><span data-v-ad32c83a="">Why $SOON</span></div>
+						<div class="intro_con" data-v-ad32c83a="">
+							<div class="part1" data-v-ad32c83a="">As the centerpiece of our SoonVerse‘s market economy,
+								$SOON will play a vital role in facilitating transactions within the NFT marketplace and
+								powering activities in the metaverse. Holders will share the benefits of our platform
+								and the airdrop of our collaborative projects over the long term. Our aim is to provide
+								a seamless, secure, and innovative experience that leverages the power of blockchain
+								technology and the metaverse to revolutionize games and metaverse industry.</div>
+							<div class="part2" data-v-ad32c83a="">
+								<div class="item" data-v-ad32c83a=""><img
+										src="f782b059c01f362ac24d39676b0c58f947b88e61.png" alt="" class="pc"
+										data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><img
+											src="f782b059c01f362ac24d39676b0c58f947b88e61.png" alt="" class="mo"
+											data-v-ad32c83a=""><span data-v-ad32c83a="">Utility</span></div>
+									<div class="c" data-v-ad32c83a="">$SOON is a certificate for community participation
+										in governance and rewards its holders with a protocol revenue buying back model.
+									</div>
+								</div>
+								<div class="line" data-v-ad32c83a=""></div>
+								<div class="item" data-v-ad32c83a=""><img
+										src="db9f68ed3e59f6b282dc3b1cdb6f090ac1188ea2.png" alt="" class="pc"
+										data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><img
+											src="db9f68ed3e59f6b282dc3b1cdb6f090ac1188ea2.png" alt="" class="mo"
+											data-v-ad32c83a=""><span data-v-ad32c83a="">Incentives</span></div>
+									<div class="c" data-v-ad32c83a="">$SOON holders are eligible for airdrops on the
+										platform, get games &amp; metaverse whitelists, and have early access to new
+										features.</div>
+								</div>
+								<div class="line" data-v-ad32c83a=""></div>
+								<div class="item" data-v-ad32c83a=""><img
+										src="106eb1f7f207d1708eb72d43ee286d77d11bc447.png" alt="" class="pc"
+										data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><img
+											src="106eb1f7f207d1708eb72d43ee286d77d11bc447.png" alt="" class="mo"
+											data-v-ad32c83a=""><span data-v-ad32c83a="">Price Appreciation</span></div>
+									<div class="c" data-v-ad32c83a="">As the SoonVerse ecosystem grows, the demand for
+										$SOON is expected to increase, leading to price appreciation.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p2 p3 p6 p7" id="p7" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title_center" data-v-ad32c83a=""><span data-v-ad32c83a="">Tokenomics</span></div>
+						<div class="intro_con" data-v-ad32c83a="">
+							<div class="part1" data-v-ad32c83a="">$SOON is an ERC20 token deployed on Ethereum mainet.
+								The total supply of $SOON tokens is 1 billion (1,000,000,000).</div>
+							<div class="part2" data-v-ad32c83a=""><img class="bg" src="pic6.08f5efa8.png" alt=""
+									data-v-ad32c83a=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-v-ad32c83a="" class="p2 p3 p6 p8" id="p8">
+				<div data-v-ad32c83a="" class="p_con">
+					<div data-v-ad32c83a="" class="intro">
+						<div data-v-ad32c83a="" class="title_center"><span data-v-ad32c83a="">Token Contract</span>
+						</div>
+						<div data-v-ad32c83a="" class="intro_con">
+							<div class="part1" data-v-ad32c83a="">Use the contract information below to add the $SOON
+								token to your wallet</div>
+							<div class="mes_box" data-v-ad32c83a="">
+								<div class="item" data-v-ad32c83a="">
+									<div data-v-ad32c83a="">Address</div>
+									<div data-v-ad32c83a="">0x574D22E2555cAc0ce71e44778f6De2e7487aE229</div>
+								</div>
+								<div class="line" data-v-ad32c83a=""></div>
+								<div class="item" data-v-ad32c83a="">
+									<div data-v-ad32c83a="">Decimal</div>
+									<div data-v-ad32c83a="">18</div>
+								</div>
+								<div class="line" data-v-ad32c83a=""></div>
+								<div class="item" data-v-ad32c83a="">
+									<div data-v-ad32c83a="">Network</div>
+									<div data-v-ad32c83a="">Ethereum</div>
+								</div>
+								<div class="line" data-v-ad32c83a=""></div>
+								<div class="item" data-v-ad32c83a="">
+									<div data-v-ad32c83a="">Token Symbol</div>
+									<div data-v-ad32c83a="">$SOON</div>
+								</div>
+							</div>
+							<div data-v-ad32c83a="" class="notice"><i data-v-ad32c83a="" class="el-icon"><svg
+										data-v-ad32c83a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+										<path fill="currentColor"
+											d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm0 832a384 384 0 0 0 0-768 384 384 0 0 0 0 768zm48-176a48 48 0 1 1-96 0 48 48 0 0 1 96 0zm-48-464a32 32 0 0 1 32 32v288a32 32 0 0 1-64 0V288a32 32 0 0 1 32-32z">
+										</path>
+									</svg></i><span data-v-ad32c83a="">Please note that you should not send any tokens
+									to this address, as doing so may result in the permanent loss of the tokens</span>
+							</div>
+							<div data-v-ad32c83a="" class="bg_p8"><img data-v-ad32c83a="" src="p8_bg.f6f8dbad.png"
+									alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p2 p3 p6 p9" id="p9" data-v-ad32c83a="">
+				<div class="p_con" data-v-ad32c83a="">
+					<div class="intro" data-v-ad32c83a="">
+						<div class="title_center" data-v-ad32c83a=""><span data-v-ad32c83a="">Strategic Partners</span>
+						</div>
+						<div class="intro_con" data-v-ad32c83a="">
+							<div class="par_links" data-v-ad32c83a="">
+								<div class="par_item" data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><a href="https://www.solrdao.com/" target="_blank"
+											rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="solr_icon.c19ea3df.png" alt="" data-v-ad32c83a=""></a></div>
+									<div class="b" data-v-ad32c83a=""><a href="http://www.iggcapital.com/"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="igg_icon.20d6145e.png" alt="" data-v-ad32c83a=""></a></div>
+								</div>
+								<div class="par_item it1" data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><a href="https://www.vespertine.capital/"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="vespertine.bfa90b51.png" alt="" data-v-ad32c83a=""></a></div>
+									<div class="b" data-v-ad32c83a=""><a href="http://capital-chain.com/"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="b85ab4435fd1b35b6475248961561c0077d73b83.png" alt=""
+												data-v-ad32c83a=""></a></div>
+								</div>
+								<div class="par_item it2" data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><a href="https://oxocapital.fund/" target="_blank"
+											rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="d1af77cc40e36dde04be3cd43b0f46b0e0407fc2.png" alt=""
+												data-v-ad32c83a=""></a></div>
+									<div class="b" data-v-ad32c83a=""><a href="https://www.bitmart.com/en-US"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="bitmart.ab178eb3.png" alt="" data-v-ad32c83a=""></a></div>
+								</div>
+								<div class="par_item it3" data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><a href="https://www.mexc.com/" target="_blank"
+											rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="3b499163446321715156d6451a5188bd31821081.png" alt=""
+												data-v-ad32c83a=""></a></div>
+									<div class="b" data-v-ad32c83a=""><a href="https://avacapital.finance/"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="capital_2.b64a1eb4.png" alt="" data-v-ad32c83a=""></a></div>
+								</div>
+								<div class="par_item it4" data-v-ad32c83a="">
+									<div class="t" data-v-ad32c83a=""><a href="https://twitter.com/INSIDERS_VEN"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="venture.9249c79e.png" alt="" data-v-ad32c83a=""></a></div>
+									<div class="b" data-v-ad32c83a=""><a href="https://twitter.com/alphacapitals"
+											target="_blank" rel="noopener noreferrer" data-v-ad32c83a=""><img
+												src="0c147e5c4b9959e84987f19381d10ed682b127fd.png" alt=""
+												data-v-ad32c83a=""></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom" data-v-ad32c83a="">
+				<div class="left" data-v-ad32c83a=""><a href="" data-v-ad32c83a=""><img src="logo.4791adce.png" alt=""
+							class="logo" data-v-ad32c83a=""><span class="w" data-v-ad32c83a="">SoonVerse</span></a>
+				</div>
+				<div class="center" data-v-ad32c83a="">© 2023 SoonVerse Labs LTD I All rights Reserved.</div>
+				<div class="right" data-v-ad32c83a="">
+					<div class="links" data-v-ad32c83a=""><a href="https://twitter.com/soon_verse" target="_blank"
+							rel="noopener noreferrer" data-v-ad32c83a=""><img
+								src="8990b0bded031a7db68ebdc3656729bf864bbe63.png" alt="" data-v-ad32c83a=""></a><a
+							href="https://discord.gg/nM28RR6XrX" target="_blank" rel="noopener noreferrer"
+							data-v-ad32c83a=""><img style="height:40px;"
+								src="ecaa9d6ebd6ebe7c28070903f57c8b24f741ca97.png" alt="" data-v-ad32c83a=""></a><a
+							href="https://t.me/soonverse_official" target="_blank" rel="noopener noreferrer"
+							data-v-ad32c83a=""><img src="3a24c3262e68f1dfb9766f10ad5d21fac79b93f4.png" alt=""
+								data-v-ad32c83a=""></a><a href="https://medium.com/@soonverse" target="_blank"
+							rel="noopener noreferrer" data-v-ad32c83a=""><img
+								src="49752e12aa2ea1fa33b8de75abfa677d0176ed04.png" alt="" data-v-ad32c83a=""></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
